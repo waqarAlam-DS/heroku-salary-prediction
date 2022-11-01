@@ -29,5 +29,5 @@ def predict():
         output=round(prediction[0],2)
         return render_template('base.html',prediction_test=f"Employee salary will be {output}")
         
-
-app.run(debug=True)
+if __name__== '__main__': #fixed syntax
+      app.run(debug=True)
